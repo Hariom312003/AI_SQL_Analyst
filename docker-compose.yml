@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: sql_analyst
+      POSTGRES_PASSWORD: sql_analyst
+      POSTGRES_DB: sql_analyst
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sql_analyst"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    env_file: .env
+    environment:
+      # .env's DATABASE_URL/SYNC_DATABASE_URL point at 'localhost', which is
+      # correct for running the backend directly on the host but WRONG
+      # inside the Compose network (localhost there means "this container").
+      # These two explicit overrides take precedence over env_file and
+      # point at the 'postgres' service name instead.
+      DATABASE_URL: postgresql+asyncpg://sql_analyst:sql_analyst@postgres:5432/sql_analyst
+      SYNC_DATABASE_URL: postgresql+psycopg2://sql_analyst:sql_analyst@postgres:5432/sql_analyst
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_db:/app/chroma_db
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.streamlit
+    environment:
+      API_BASE_URL: http://backend:8000/api/v1
+    depends_on:
+      - backend
+    ports:
+      - "8501:8501"
+
+volumes:
+  pgdata:

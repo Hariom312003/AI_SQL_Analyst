@@ -1,0 +1,401 @@
+order_id,customer_name,product,category,region,quantity,unit_price,total_price,order_date
+1,Customer 2,Laptop,Electronics,East,4,938.39,3753.56,2025-06-24
+2,Customer 15,Keyboard,Electronics,West,1,49.28,49.28,2025-09-21
+3,Customer 4,Desk Chair,Furniture,West,1,138.61,138.61,2025-07-11
+4,Customer 10,Notebook,Office Supplies,North,4,3.19,12.76,2025-07-12
+5,Customer 6,Laptop,Electronics,East,3,867.13,2601.39,2025-11-23
+6,Customer 9,Mouse,Electronics,West,4,17.48,69.92,2025-01-27
+7,Customer 10,Standing Desk,Furniture,North,4,300.46,1201.84,2025-05-13
+8,Customer 8,Desk Chair,Furniture,West,1,145.13,145.13,2025-12-21
+9,Customer 16,Headphones,Electronics,North,2,77.93,155.86,2025-01-13
+10,Customer 12,Headphones,Electronics,East,1,79.61,79.61,2025-04-07
+11,Customer 2,Webcam,Electronics,South,3,58.66,175.98,2025-08-19
+12,Customer 18,Notebook,Office Supplies,South,5,3.18,15.9,2025-11-11
+13,Customer 17,Keyboard,Electronics,North,4,41.76,167.04,2025-10-06
+14,Customer 6,Notebook,Office Supplies,West,4,3.1,12.4,2025-06-20
+15,Customer 5,Desk Chair,Furniture,North,3,141.92,425.76,2025-01-04
+16,Customer 2,Headphones,Electronics,West,4,79.54,318.16,2025-11-16
+17,Customer 16,Desk Chair,Furniture,South,4,141.5,566.0,2025-02-16
+18,Customer 6,Standing Desk,Furniture,South,1,315.95,315.95,2025-12-06
+19,Customer 18,Webcam,Electronics,South,5,52.07,260.35,2025-10-02
+20,Customer 11,Webcam,Electronics,West,2,56.78,113.56,2025-02-16
+21,Customer 7,Webcam,Electronics,North,4,53.97,215.88,2025-06-22
+22,Customer 14,Monitor,Electronics,South,1,192.78,192.78,2025-10-20
+23,Customer 10,Notebook,Office Supplies,East,1,3.0,3.0,2025-12-05
+24,Customer 14,Headphones,Electronics,East,3,78.1,234.3,2025-03-09
+25,Customer 7,Standing Desk,Furniture,West,2,293.61,587.22,2025-05-04
+26,Customer 16,Monitor,Electronics,West,5,218.39,1091.95,2025-06-08
+27,Customer 15,Keyboard,Electronics,South,4,46.95,187.8,2025-10-13
+28,Customer 15,Laptop,Electronics,North,1,1026.49,1026.49,2025-02-13
+29,Customer 10,Notebook,Office Supplies,West,2,3.05,6.1,2025-07-05
+30,Customer 7,Laptop,Electronics,East,4,991.7,3966.8,2025-08-12
+31,Customer 16,Mouse,Electronics,South,3,18.54,55.62,2025-08-03
+32,Customer 14,Notebook,Office Supplies,North,1,3.0,3.0,2025-03-09
+33,Customer 6,Standing Desk,Furniture,West,1,325.61,325.61,2025-10-05
+34,Customer 6,Webcam,Electronics,North,3,53.32,159.96,2025-08-16
+35,Customer 2,Mouse,Electronics,North,5,17.94,89.7,2025-06-22
+36,Customer 4,Keyboard,Electronics,East,3,44.92,134.76,2025-06-26
+37,Customer 11,Desk Chair,Furniture,East,3,133.48,400.44,2025-12-09
+38,Customer 1,Pen Pack,Office Supplies,West,3,5.43,16.29,2025-05-23
+39,Customer 14,Desk Chair,Furniture,East,1,141.51,141.51,2025-04-03
+40,Customer 19,Mouse,Electronics,West,2,18.57,37.14,2025-09-20
+41,Customer 5,Monitor,Electronics,North,1,227.47,227.47,2025-12-07
+42,Customer 10,Mouse,Electronics,West,3,17.54,52.62,2025-04-23
+43,Customer 13,Webcam,Electronics,East,2,59.98,119.96,2025-08-08
+44,Customer 11,Webcam,Electronics,North,2,59.8,119.6,2025-03-05
+45,Customer 2,Keyboard,Electronics,East,3,49.43,148.29,2025-02-25
+46,Customer 10,Pen Pack,Office Supplies,South,5,6.47,32.35,2025-02-15
+47,Customer 18,Laptop,Electronics,North,4,980.72,3922.88,2025-05-11
+48,Customer 19,Notebook,Office Supplies,North,4,2.86,11.44,2025-01-26
+49,Customer 15,Laptop,Electronics,North,1,1012.91,1012.91,2025-11-05
+50,Customer 6,Monitor,Electronics,South,3,225.73,677.19,2025-01-06
+51,Customer 9,Webcam,Electronics,North,4,60.19,240.76,2025-06-14
+52,Customer 1,Webcam,Electronics,East,1,52.03,52.03,2025-04-04
+53,Customer 16,Webcam,Electronics,East,1,55.07,55.07,2025-12-19
+54,Customer 2,Headphones,Electronics,East,1,84.87,84.87,2025-01-20
+55,Customer 2,Pen Pack,Office Supplies,South,1,5.55,5.55,2025-07-26
+56,Customer 7,Webcam,Electronics,West,2,54.87,109.74,2025-07-18
+57,Customer 12,Desk Chair,Furniture,East,2,151.89,303.78,2025-06-01
+58,Customer 15,Mouse,Electronics,South,4,16.58,66.32,2025-09-04
+59,Customer 15,Laptop,Electronics,West,5,968.25,4841.25,2025-03-26
+60,Customer 14,Headphones,Electronics,North,3,84.56,253.68,2025-11-01
+61,Customer 7,Keyboard,Electronics,East,5,47.67,238.35,2025-06-07
+62,Customer 6,Notebook,Office Supplies,South,4,3.22,12.88,2025-10-17
+63,Customer 20,Mouse,Electronics,West,2,17.73,35.46,2025-02-18
+64,Customer 20,Keyboard,Electronics,East,3,42.73,128.19,2025-04-07
+65,Customer 10,Pen Pack,Office Supplies,East,5,5.53,27.65,2025-11-02
+66,Customer 19,Monitor,Electronics,North,1,223.64,223.64,2025-04-09
+67,Customer 12,Webcam,Electronics,North,5,51.32,256.6,2025-02-08
+68,Customer 4,Headphones,Electronics,North,1,72.34,72.34,2025-09-02
+69,Customer 17,Pen Pack,Office Supplies,South,1,6.11,6.11,2025-07-19
+70,Customer 16,Pen Pack,Office Supplies,West,2,6.01,12.02,2025-09-24
+71,Customer 5,Desk Chair,Furniture,North,1,131.08,131.08,2025-11-07
+72,Customer 1,Standing Desk,Furniture,South,3,314.64,943.92,2025-04-02
+73,Customer 3,Webcam,Electronics,North,3,50.62,151.86,2025-02-23
+74,Customer 17,Headphones,Electronics,West,5,73.59,367.95,2025-11-23
+75,Customer 13,Keyboard,Electronics,East,5,47.72,238.6,2025-07-22
+76,Customer 7,Standing Desk,Furniture,East,4,296.61,1186.44,2025-10-15
+77,Customer 14,Webcam,Electronics,East,5,54.59,272.95,2025-10-11
+78,Customer 4,Keyboard,Electronics,South,2,41.76,83.52,2025-06-13
+79,Customer 15,Standing Desk,Furniture,South,2,311.52,623.04,2025-07-10
+80,Customer 16,Headphones,Electronics,West,2,82.97,165.94,2025-03-09
+81,Customer 10,Standing Desk,Furniture,East,5,318.78,1593.9,2025-10-09
+82,Customer 12,Webcam,Electronics,East,5,56.68,283.4,2025-03-22
+83,Customer 1,Notebook,Office Supplies,North,4,2.87,11.48,2025-03-20
+84,Customer 20,Desk Chair,Furniture,East,4,150.1,600.4,2025-12-04
+85,Customer 11,Standing Desk,Furniture,West,1,334.45,334.45,2025-07-03
+86,Customer 9,Notebook,Office Supplies,East,1,3.28,3.28,2025-03-22
+87,Customer 2,Headphones,Electronics,South,4,84.72,338.88,2025-12-26
+88,Customer 4,Notebook,Office Supplies,North,3,2.76,8.28,2025-07-17
+89,Customer 14,Mouse,Electronics,East,3,18.26,54.78,2025-06-13
+90,Customer 5,Notebook,Office Supplies,East,4,3.18,12.72,2025-07-14
+91,Customer 15,Mouse,Electronics,North,5,16.63,83.15,2025-10-04
+92,Customer 5,Headphones,Electronics,East,4,78.7,314.8,2025-12-21
+93,Customer 13,Notebook,Office Supplies,South,2,3.24,6.48,2025-10-21
+94,Customer 20,Notebook,Office Supplies,North,2,2.89,5.78,2025-04-05
+95,Customer 3,Laptop,Electronics,East,5,938.2,4691.0,2025-09-11
+96,Customer 13,Mouse,Electronics,South,3,19.57,58.71,2025-05-22
+97,Customer 17,Mouse,Electronics,West,2,19.75,39.5,2025-01-20
+98,Customer 3,Headphones,Electronics,North,1,85.61,85.61,2025-11-18
+99,Customer 2,Headphones,Electronics,South,3,82.98,248.94,2025-07-01
+100,Customer 7,Notebook,Office Supplies,South,5,2.88,14.4,2025-12-13
+101,Customer 11,Laptop,Electronics,North,2,1029.5,2059.0,2025-09-22
+102,Customer 16,Monitor,Electronics,West,5,225.93,1129.65,2025-09-08
+103,Customer 3,Laptop,Electronics,East,1,1044.83,1044.83,2025-01-18
+104,Customer 5,Standing Desk,Furniture,North,1,345.41,345.41,2025-11-01
+105,Customer 1,Headphones,Electronics,West,1,84.43,84.43,2025-10-06
+106,Customer 4,Keyboard,Electronics,North,4,40.83,163.32,2025-01-01
+107,Customer 6,Pen Pack,Office Supplies,West,4,6.36,25.44,2025-12-07
+108,Customer 3,Keyboard,Electronics,West,1,47.71,47.71,2025-12-26
+109,Customer 10,Pen Pack,Office Supplies,North,4,6.41,25.64,2025-06-02
+110,Customer 11,Mouse,Electronics,East,1,18.02,18.02,2025-07-21
+111,Customer 2,Laptop,Electronics,North,5,884.49,4422.45,2025-10-20
+112,Customer 15,Laptop,Electronics,East,2,989.88,1979.76,2025-07-27
+113,Customer 5,Desk Chair,Furniture,West,1,143.26,143.26,2025-01-02
+114,Customer 16,Headphones,Electronics,North,4,74.77,299.08,2025-05-03
+115,Customer 6,Monitor,Electronics,East,5,208.26,1041.3,2025-07-22
+116,Customer 11,Pen Pack,Office Supplies,South,3,5.57,16.71,2025-03-26
+117,Customer 9,Headphones,Electronics,West,3,83.2,249.6,2025-04-18
+118,Customer 19,Mouse,Electronics,South,1,18.03,18.03,2025-09-11
+119,Customer 2,Mouse,Electronics,South,1,16.68,16.68,2025-12-08
+120,Customer 20,Standing Desk,Furniture,South,3,327.1,981.3,2025-05-18
+121,Customer 13,Mouse,Electronics,South,3,16.98,50.94,2025-12-16
+122,Customer 3,Webcam,Electronics,North,1,54.1,54.1,2025-06-13
+123,Customer 11,Laptop,Electronics,East,3,962.5,2887.5,2025-08-19
+124,Customer 7,Desk Chair,Furniture,East,4,134.85,539.4,2025-03-22
+125,Customer 20,Mouse,Electronics,East,3,18.45,55.35,2025-07-10
+126,Customer 18,Pen Pack,Office Supplies,East,4,6.46,25.84,2025-02-25
+127,Customer 11,Notebook,Office Supplies,West,3,3.18,9.54,2025-03-09
+128,Customer 18,Monitor,Electronics,West,3,193.87,581.61,2025-01-02
+129,Customer 10,Pen Pack,Office Supplies,North,1,5.74,5.74,2025-07-10
+130,Customer 9,Notebook,Office Supplies,West,2,3.15,6.3,2025-11-01
+131,Customer 5,Notebook,Office Supplies,East,5,2.92,14.6,2025-09-05
+132,Customer 2,Standing Desk,Furniture,West,1,311.35,311.35,2025-07-26
+133,Customer 3,Headphones,Electronics,East,4,76.98,307.92,2025-10-19
+134,Customer 14,Notebook,Office Supplies,North,2,3.08,6.16,2025-05-01
+135,Customer 9,Notebook,Office Supplies,West,3,2.8,8.4,2025-09-05
+136,Customer 17,Webcam,Electronics,West,5,55.62,278.1,2025-03-23
+137,Customer 7,Standing Desk,Furniture,North,1,316.69,316.69,2025-11-11
+138,Customer 19,Pen Pack,Office Supplies,North,4,5.92,23.68,2025-06-13
+139,Customer 13,Monitor,Electronics,North,1,227.1,227.1,2025-12-02
+140,Customer 15,Mouse,Electronics,South,2,17.96,35.92,2025-12-16
+141,Customer 18,Laptop,Electronics,East,1,901.3,901.3,2025-11-23
+142,Customer 13,Desk Chair,Furniture,North,4,144.77,579.08,2025-10-21
+143,Customer 19,Notebook,Office Supplies,West,2,3.02,6.04,2025-11-10
+144,Customer 8,Monitor,Electronics,East,3,221.28,663.84,2025-09-24
+145,Customer 8,Headphones,Electronics,South,5,81.39,406.95,2025-02-23
+146,Customer 1,Desk Chair,Furniture,South,3,140.88,422.64,2025-07-03
+147,Customer 1,Webcam,Electronics,South,5,56.44,282.2,2025-05-05
+148,Customer 14,Monitor,Electronics,South,1,190.04,190.04,2025-08-26
+149,Customer 9,Headphones,Electronics,South,2,81.58,163.16,2025-07-01
+150,Customer 17,Mouse,Electronics,East,4,18.48,73.92,2025-09-27
+151,Customer 11,Pen Pack,Office Supplies,East,3,6.31,18.93,2025-08-25
+152,Customer 2,Keyboard,Electronics,North,5,47.54,237.7,2025-06-24
+153,Customer 20,Desk Chair,Furniture,East,4,138.32,553.28,2025-08-15
+154,Customer 17,Headphones,Electronics,East,5,87.75,438.75,2025-02-08
+155,Customer 6,Webcam,Electronics,North,4,53.31,213.24,2025-01-04
+156,Customer 18,Desk Chair,Furniture,South,4,139.71,558.84,2025-11-27
+157,Customer 13,Monitor,Electronics,North,5,206.29,1031.45,2025-01-22
+158,Customer 9,Keyboard,Electronics,West,3,47.72,143.16,2025-04-25
+159,Customer 8,Keyboard,Electronics,North,1,43.85,43.85,2025-12-02
+160,Customer 1,Webcam,Electronics,West,4,57.35,229.4,2025-08-21
+161,Customer 19,Notebook,Office Supplies,North,4,3.18,12.72,2025-05-02
+162,Customer 20,Mouse,Electronics,East,4,19.29,77.16,2025-06-01
+163,Customer 14,Keyboard,Electronics,West,4,40.77,163.08,2025-10-11
+164,Customer 11,Standing Desk,Furniture,South,4,303.21,1212.84,2025-05-24
+165,Customer 9,Notebook,Office Supplies,South,5,2.88,14.4,2025-09-16
+166,Customer 14,Mouse,Electronics,North,2,19.39,38.78,2025-11-06
+167,Customer 11,Standing Desk,Furniture,West,2,333.93,667.86,2025-06-22
+168,Customer 3,Standing Desk,Furniture,East,2,314.11,628.22,2025-07-04
+169,Customer 2,Mouse,Electronics,South,5,18.72,93.6,2025-09-17
+170,Customer 3,Headphones,Electronics,South,5,79.95,399.75,2025-05-04
+171,Customer 7,Laptop,Electronics,South,1,893.38,893.38,2025-07-01
+172,Customer 18,Webcam,Electronics,West,4,53.28,213.12,2025-06-12
+173,Customer 7,Webcam,Electronics,West,4,55.45,221.8,2025-12-08
+174,Customer 7,Monitor,Electronics,East,2,202.66,405.32,2025-11-25
+175,Customer 1,Webcam,Electronics,South,4,56.0,224.0,2025-08-18
+176,Customer 7,Pen Pack,Office Supplies,West,2,5.79,11.58,2025-03-05
+177,Customer 12,Laptop,Electronics,West,2,961.68,1923.36,2025-04-22
+178,Customer 12,Standing Desk,Furniture,East,3,318.48,955.44,2025-12-27
+179,Customer 10,Keyboard,Electronics,North,5,48.62,243.1,2025-04-22
+180,Customer 7,Mouse,Electronics,West,3,16.57,49.71,2025-06-18
+181,Customer 19,Notebook,Office Supplies,West,3,2.96,8.88,2025-02-01
+182,Customer 12,Notebook,Office Supplies,North,1,2.72,2.72,2025-01-07
+183,Customer 1,Webcam,Electronics,North,3,55.18,165.54,2025-10-09
+184,Customer 18,Pen Pack,Office Supplies,East,1,5.86,5.86,2025-10-02
+185,Customer 5,Headphones,Electronics,South,2,76.83,153.66,2025-06-11
+186,Customer 4,Mouse,Electronics,North,1,16.6,16.6,2025-05-24
+187,Customer 9,Mouse,Electronics,South,3,17.96,53.88,2025-01-09
+188,Customer 5,Desk Chair,Furniture,South,4,149.55,598.2,2025-07-08
+189,Customer 7,Desk Chair,Furniture,North,2,139.44,278.88,2025-11-19
+190,Customer 10,Notebook,Office Supplies,South,2,3.26,6.52,2025-06-02
+191,Customer 7,Pen Pack,Office Supplies,North,4,5.58,22.32,2025-08-02
+192,Customer 17,Laptop,Electronics,North,5,856.76,4283.8,2025-12-06
+193,Customer 2,Mouse,Electronics,East,1,18.43,18.43,2025-06-07
+194,Customer 6,Keyboard,Electronics,West,3,48.14,144.42,2025-06-01
+195,Customer 20,Desk Chair,Furniture,West,4,130.56,522.24,2025-11-21
+196,Customer 20,Keyboard,Electronics,East,2,48.77,97.54,2025-07-13
+197,Customer 3,Webcam,Electronics,South,5,53.48,267.4,2025-09-22
+198,Customer 11,Desk Chair,Furniture,South,4,142.82,571.28,2025-04-06
+199,Customer 15,Standing Desk,Furniture,South,2,293.0,586.0,2025-11-01
+200,Customer 17,Monitor,Electronics,East,1,195.95,195.95,2025-08-20
+201,Customer 3,Monitor,Electronics,East,4,202.32,809.28,2025-02-25
+202,Customer 2,Keyboard,Electronics,North,1,41.79,41.79,2025-09-19
+203,Customer 19,Notebook,Office Supplies,North,3,3.3,9.9,2025-04-01
+204,Customer 12,Desk Chair,Furniture,West,5,142.37,711.85,2025-05-04
+205,Customer 4,Laptop,Electronics,South,5,956.88,4784.4,2025-02-17
+206,Customer 7,Notebook,Office Supplies,East,1,3.06,3.06,2025-02-08
+207,Customer 4,Webcam,Electronics,North,5,49.7,248.5,2025-01-17
+208,Customer 4,Pen Pack,Office Supplies,East,5,5.7,28.5,2025-08-17
+209,Customer 16,Desk Chair,Furniture,East,2,144.97,289.94,2025-07-20
+210,Customer 19,Keyboard,Electronics,East,4,49.35,197.4,2025-02-12
+211,Customer 9,Webcam,Electronics,South,1,58.26,58.26,2025-05-15
+212,Customer 4,Webcam,Electronics,East,1,59.29,59.29,2025-08-11
+213,Customer 14,Headphones,Electronics,North,1,87.38,87.38,2025-04-05
+214,Customer 7,Webcam,Electronics,South,5,59.54,297.7,2025-03-06
+215,Customer 9,Pen Pack,Office Supplies,East,4,6.45,25.8,2025-08-11
+216,Customer 19,Laptop,Electronics,East,4,993.92,3975.68,2025-07-22
+217,Customer 18,Headphones,Electronics,West,1,86.46,86.46,2025-09-24
+218,Customer 10,Desk Chair,Furniture,North,1,131.72,131.72,2025-06-21
+219,Customer 19,Keyboard,Electronics,West,5,43.89,219.45,2025-10-20
+220,Customer 12,Standing Desk,Furniture,East,2,308.42,616.84,2025-05-17
+221,Customer 11,Monitor,Electronics,South,3,214.27,642.81,2025-07-26
+222,Customer 16,Laptop,Electronics,North,1,926.67,926.67,2025-05-11
+223,Customer 1,Monitor,Electronics,West,1,217.75,217.75,2025-01-10
+224,Customer 12,Notebook,Office Supplies,West,2,2.76,5.52,2025-06-21
+225,Customer 10,Monitor,Electronics,East,2,197.49,394.98,2025-12-06
+226,Customer 1,Laptop,Electronics,South,3,904.29,2712.87,2025-02-02
+227,Customer 18,Laptop,Electronics,North,5,978.98,4894.9,2025-09-14
+228,Customer 7,Keyboard,Electronics,West,2,43.15,86.3,2025-04-21
+229,Customer 8,Notebook,Office Supplies,West,5,3.29,16.45,2025-08-27
+230,Customer 5,Desk Chair,Furniture,East,1,129.86,129.86,2025-12-09
+231,Customer 9,Headphones,Electronics,East,1,85.53,85.53,2025-09-17
+232,Customer 3,Desk Chair,Furniture,West,1,133.09,133.09,2025-06-05
+233,Customer 17,Monitor,Electronics,South,3,219.88,659.64,2025-09-08
+234,Customer 1,Pen Pack,Office Supplies,North,3,6.31,18.93,2025-01-21
+235,Customer 15,Standing Desk,Furniture,North,5,295.72,1478.6,2025-03-25
+236,Customer 14,Monitor,Electronics,South,2,224.55,449.1,2025-08-05
+237,Customer 3,Laptop,Electronics,West,3,901.6,2704.8,2025-11-20
+238,Customer 15,Desk Chair,Furniture,North,5,135.5,677.5,2025-07-15
+239,Customer 2,Monitor,Electronics,West,2,195.77,391.54,2025-01-26
+240,Customer 10,Laptop,Electronics,East,4,953.36,3813.44,2025-04-14
+241,Customer 8,Monitor,Electronics,North,3,207.25,621.75,2025-05-04
+242,Customer 3,Mouse,Electronics,North,5,17.94,89.7,2025-11-26
+243,Customer 18,Monitor,Electronics,North,3,197.72,593.16,2025-02-07
+244,Customer 19,Monitor,Electronics,East,1,227.51,227.51,2025-01-09
+245,Customer 14,Laptop,Electronics,North,3,931.09,2793.27,2025-07-15
+246,Customer 8,Pen Pack,Office Supplies,South,5,6.38,31.9,2025-10-21
+247,Customer 12,Pen Pack,Office Supplies,North,1,6.5,6.5,2025-09-10
+248,Customer 2,Webcam,Electronics,West,2,58.24,116.48,2025-08-17
+249,Customer 11,Standing Desk,Furniture,South,4,301.57,1206.28,2025-03-25
+250,Customer 6,Keyboard,Electronics,South,4,40.52,162.08,2025-07-27
+251,Customer 9,Pen Pack,Office Supplies,North,1,5.95,5.95,2025-10-04
+252,Customer 13,Notebook,Office Supplies,South,4,2.94,11.76,2025-02-25
+253,Customer 14,Headphones,Electronics,East,4,79.38,317.52,2025-04-18
+254,Customer 12,Laptop,Electronics,North,3,1035.51,3106.53,2025-07-10
+255,Customer 20,Laptop,Electronics,South,4,1015.74,4062.96,2025-08-02
+256,Customer 10,Keyboard,Electronics,East,5,47.25,236.25,2025-04-27
+257,Customer 15,Notebook,Office Supplies,South,4,2.88,11.52,2025-05-26
+258,Customer 3,Notebook,Office Supplies,East,4,2.94,11.76,2025-11-16
+259,Customer 4,Desk Chair,Furniture,East,3,151.4,454.2,2025-04-12
+260,Customer 6,Headphones,Electronics,North,2,78.53,157.06,2025-06-12
+261,Customer 15,Pen Pack,Office Supplies,East,1,6.2,6.2,2025-02-18
+262,Customer 4,Monitor,Electronics,West,1,202.71,202.71,2025-10-06
+263,Customer 4,Webcam,Electronics,North,5,52.21,261.05,2025-11-19
+264,Customer 6,Pen Pack,Office Supplies,East,2,5.57,11.14,2025-04-08
+265,Customer 11,Webcam,Electronics,East,5,51.73,258.65,2025-12-15
+266,Customer 7,Notebook,Office Supplies,East,5,3.07,15.35,2025-09-07
+267,Customer 9,Laptop,Electronics,East,2,1040.46,2080.92,2025-07-11
+268,Customer 20,Desk Chair,Furniture,East,1,137.2,137.2,2025-09-24
+269,Customer 7,Monitor,Electronics,South,3,228.31,684.93,2025-11-24
+270,Customer 17,Pen Pack,Office Supplies,South,3,5.99,17.97,2025-06-18
+271,Customer 7,Pen Pack,Office Supplies,West,2,6.5,13.0,2025-12-25
+272,Customer 5,Webcam,Electronics,West,5,57.69,288.45,2025-12-21
+273,Customer 13,Mouse,Electronics,East,3,17.84,53.52,2025-09-07
+274,Customer 8,Standing Desk,Furniture,South,2,304.5,609.0,2025-06-16
+275,Customer 12,Keyboard,Electronics,North,2,47.84,95.68,2025-04-24
+276,Customer 3,Monitor,Electronics,West,1,203.12,203.12,2025-06-22
+277,Customer 3,Keyboard,Electronics,South,1,47.47,47.47,2025-08-04
+278,Customer 1,Headphones,Electronics,South,5,75.08,375.4,2025-12-05
+279,Customer 13,Headphones,Electronics,North,4,86.93,347.72,2025-04-27
+280,Customer 10,Webcam,Electronics,West,1,58.2,58.2,2025-03-08
+281,Customer 12,Keyboard,Electronics,North,4,41.51,166.04,2025-09-23
+282,Customer 6,Mouse,Electronics,East,3,18.19,54.57,2025-03-14
+283,Customer 1,Notebook,Office Supplies,East,4,3.3,13.2,2025-01-27
+284,Customer 7,Mouse,Electronics,South,1,18.82,18.82,2025-02-27
+285,Customer 8,Keyboard,Electronics,East,3,44.32,132.96,2025-03-02
+286,Customer 19,Notebook,Office Supplies,West,2,3.17,6.34,2025-09-23
+287,Customer 15,Webcam,Electronics,West,3,53.04,159.12,2025-03-21
+288,Customer 12,Mouse,Electronics,West,3,19.41,58.23,2025-04-04
+289,Customer 6,Webcam,Electronics,North,1,51.19,51.19,2025-04-15
+290,Customer 18,Desk Chair,Furniture,West,1,126.01,126.01,2025-02-12
+291,Customer 7,Laptop,Electronics,North,1,978.93,978.93,2025-09-23
+292,Customer 12,Laptop,Electronics,East,1,1018.55,1018.55,2025-04-23
+293,Customer 11,Headphones,Electronics,East,5,73.48,367.4,2025-06-11
+294,Customer 11,Desk Chair,Furniture,West,2,147.07,294.14,2025-03-14
+295,Customer 13,Notebook,Office Supplies,North,3,2.92,8.76,2025-05-06
+296,Customer 7,Standing Desk,Furniture,North,4,295.61,1182.44,2025-10-03
+297,Customer 14,Mouse,Electronics,West,1,19.16,19.16,2025-01-11
+298,Customer 19,Pen Pack,Office Supplies,South,1,6.18,6.18,2025-03-13
+299,Customer 10,Mouse,Electronics,North,5,19.71,98.55,2025-12-24
+300,Customer 6,Standing Desk,Furniture,East,2,329.99,659.98,2025-12-08
+301,Customer 8,Laptop,Electronics,East,3,959.67,2879.01,2025-05-23
+302,Customer 8,Headphones,Electronics,South,1,72.79,72.79,2025-12-17
+303,Customer 3,Standing Desk,Furniture,West,2,314.79,629.58,2025-04-21
+304,Customer 3,Monitor,Electronics,East,3,205.19,615.57,2025-10-08
+305,Customer 17,Mouse,Electronics,North,2,18.23,36.46,2025-08-19
+306,Customer 16,Monitor,Electronics,East,1,197.92,197.92,2025-08-25
+307,Customer 17,Notebook,Office Supplies,South,1,3.23,3.23,2025-02-13
+308,Customer 10,Pen Pack,Office Supplies,East,5,5.47,27.35,2025-05-06
+309,Customer 18,Headphones,Electronics,North,1,82.87,82.87,2025-01-06
+310,Customer 2,Headphones,Electronics,North,2,78.76,157.52,2025-07-05
+311,Customer 5,Standing Desk,Furniture,North,5,308.51,1542.55,2025-05-10
+312,Customer 9,Desk Chair,Furniture,North,2,133.41,266.82,2025-12-17
+313,Customer 16,Pen Pack,Office Supplies,North,5,6.52,32.6,2025-09-03
+314,Customer 4,Laptop,Electronics,West,1,972.72,972.72,2025-05-04
+315,Customer 3,Webcam,Electronics,West,4,58.52,234.08,2025-09-15
+316,Customer 10,Headphones,Electronics,West,1,78.42,78.42,2025-01-09
+317,Customer 17,Laptop,Electronics,West,3,1008.18,3024.54,2025-12-05
+318,Customer 20,Monitor,Electronics,South,3,209.73,629.19,2025-04-27
+319,Customer 14,Pen Pack,Office Supplies,South,2,6.1,12.2,2025-06-04
+320,Customer 1,Keyboard,Electronics,East,1,41.43,41.43,2025-10-24
+321,Customer 17,Desk Chair,Furniture,East,2,137.44,274.88,2025-06-12
+322,Customer 16,Monitor,Electronics,South,5,228.18,1140.9,2025-09-11
+323,Customer 6,Keyboard,Electronics,East,3,45.61,136.83,2025-05-13
+324,Customer 2,Monitor,Electronics,South,3,202.47,607.41,2025-12-10
+325,Customer 20,Desk Chair,Furniture,South,1,130.65,130.65,2025-07-20
+326,Customer 11,Pen Pack,Office Supplies,South,2,6.08,12.16,2025-10-21
+327,Customer 3,Desk Chair,Furniture,East,5,151.97,759.85,2025-03-17
+328,Customer 3,Webcam,Electronics,West,1,59.9,59.9,2025-11-11
+329,Customer 19,Webcam,Electronics,East,3,49.55,148.65,2025-08-02
+330,Customer 4,Webcam,Electronics,West,3,49.79,149.37,2025-05-21
+331,Customer 12,Keyboard,Electronics,West,3,44.69,134.07,2025-06-01
+332,Customer 18,Webcam,Electronics,East,2,59.17,118.34,2025-12-11
+333,Customer 3,Laptop,Electronics,South,2,885.51,1771.02,2025-06-21
+334,Customer 16,Keyboard,Electronics,West,3,49.19,147.57,2025-01-27
+335,Customer 12,Pen Pack,Office Supplies,South,1,6.11,6.11,2025-12-24
+336,Customer 5,Mouse,Electronics,East,1,19.12,19.12,2025-07-14
+337,Customer 19,Standing Desk,Furniture,South,5,326.86,1634.3,2025-11-12
+338,Customer 5,Mouse,Electronics,West,3,16.63,49.89,2025-11-22
+339,Customer 2,Laptop,Electronics,North,2,912.72,1825.44,2025-09-24
+340,Customer 12,Webcam,Electronics,North,3,54.6,163.8,2025-06-19
+341,Customer 3,Standing Desk,Furniture,North,4,312.11,1248.44,2025-10-17
+342,Customer 9,Desk Chair,Furniture,North,3,140.62,421.86,2025-12-06
+343,Customer 11,Desk Chair,Furniture,West,1,135.64,135.64,2025-03-03
+344,Customer 5,Mouse,Electronics,North,3,19.11,57.33,2025-05-27
+345,Customer 8,Desk Chair,Furniture,South,4,150.4,601.6,2025-11-18
+346,Customer 8,Mouse,Electronics,West,3,16.33,48.99,2025-03-15
+347,Customer 11,Headphones,Electronics,South,5,72.65,363.25,2025-03-20
+348,Customer 16,Desk Chair,Furniture,West,5,127.26,636.3,2025-04-26
+349,Customer 19,Webcam,Electronics,North,1,50.16,50.16,2025-01-23
+350,Customer 15,Notebook,Office Supplies,South,3,3.25,9.75,2025-11-16
+351,Customer 6,Notebook,Office Supplies,South,3,2.74,8.22,2025-03-27
+352,Customer 4,Notebook,Office Supplies,North,1,2.87,2.87,2025-03-27
+353,Customer 3,Standing Desk,Furniture,West,5,333.3,1666.5,2025-07-23
+354,Customer 19,Standing Desk,Furniture,West,5,348.38,1741.9,2025-08-04
+355,Customer 5,Monitor,Electronics,West,3,211.83,635.49,2025-12-25
+356,Customer 18,Headphones,Electronics,South,4,79.73,318.92,2025-06-13
+357,Customer 15,Keyboard,Electronics,North,2,44.02,88.04,2025-02-03
+358,Customer 17,Desk Chair,Furniture,East,4,138.49,553.96,2025-03-26
+359,Customer 6,Laptop,Electronics,West,1,884.93,884.93,2025-11-06
+360,Customer 18,Pen Pack,Office Supplies,West,2,6.02,12.04,2025-08-26
+361,Customer 19,Laptop,Electronics,North,2,864.33,1728.66,2025-05-05
+362,Customer 6,Mouse,Electronics,East,1,18.25,18.25,2025-05-25
+363,Customer 18,Standing Desk,Furniture,East,4,300.92,1203.68,2025-07-22
+364,Customer 3,Standing Desk,Furniture,North,5,348.73,1743.65,2025-02-10
+365,Customer 17,Headphones,Electronics,South,2,79.01,158.02,2025-08-26
+366,Customer 13,Monitor,Electronics,South,4,211.7,846.8,2025-06-05
+367,Customer 17,Mouse,Electronics,North,4,18.62,74.48,2025-02-12
+368,Customer 16,Notebook,Office Supplies,North,4,2.8,11.2,2025-09-26
+369,Customer 1,Pen Pack,Office Supplies,East,1,6.0,6.0,2025-07-15
+370,Customer 11,Webcam,Electronics,South,3,60.44,181.32,2025-02-14
+371,Customer 5,Webcam,Electronics,North,3,50.24,150.72,2025-09-17
+372,Customer 1,Notebook,Office Supplies,South,4,2.73,10.92,2025-08-27
+373,Customer 17,Headphones,Electronics,West,5,79.61,398.05,2025-09-02
+374,Customer 10,Notebook,Office Supplies,East,4,3.17,12.68,2025-11-12
+375,Customer 9,Mouse,Electronics,East,5,18.47,92.35,2025-04-10
+376,Customer 12,Notebook,Office Supplies,South,4,3.28,13.12,2025-09-11
+377,Customer 10,Standing Desk,Furniture,South,5,320.37,1601.85,2025-01-20
+378,Customer 8,Desk Chair,Furniture,North,2,146.87,293.74,2025-05-04
+379,Customer 15,Monitor,Electronics,South,4,220.39,881.56,2025-03-25
+380,Customer 6,Desk Chair,Furniture,North,1,152.77,152.77,2025-10-05
+381,Customer 15,Monitor,Electronics,West,2,211.23,422.46,2025-03-24
+382,Customer 16,Mouse,Electronics,South,4,16.83,67.32,2025-10-10
+383,Customer 8,Pen Pack,Office Supplies,North,1,5.73,5.73,2025-03-09
+384,Customer 9,Notebook,Office Supplies,South,3,3.12,9.36,2025-02-02
+385,Customer 5,Keyboard,Electronics,South,4,47.23,188.92,2025-02-23
+386,Customer 4,Headphones,Electronics,North,5,75.85,379.25,2025-05-10
+387,Customer 19,Keyboard,Electronics,West,3,44.03,132.09,2025-09-07
+388,Customer 1,Mouse,Electronics,South,2,17.18,34.36,2025-05-04
+389,Customer 11,Notebook,Office Supplies,West,2,2.92,5.84,2025-11-07
+390,Customer 1,Laptop,Electronics,West,5,949.61,4748.05,2025-08-18
+391,Customer 17,Standing Desk,Furniture,West,5,327.27,1636.35,2025-06-25
+392,Customer 15,Desk Chair,Furniture,North,4,138.91,555.64,2025-10-03
+393,Customer 10,Desk Chair,Furniture,East,3,139.84,419.52,2025-06-11
+394,Customer 15,Notebook,Office Supplies,North,3,3.2,9.6,2025-12-03
+395,Customer 14,Mouse,Electronics,West,4,19.25,77.0,2025-10-27
+396,Customer 15,Mouse,Electronics,South,5,17.33,86.65,2025-02-11
+397,Customer 20,Pen Pack,Office Supplies,East,4,6.53,26.12,2025-06-10
+398,Customer 15,Standing Desk,Furniture,North,2,298.87,597.74,2025-03-06
+399,Customer 1,Standing Desk,Furniture,East,5,313.78,1568.9,2025-01-23
+400,Customer 20,Standing Desk,Furniture,South,1,299.23,299.23,2025-03-22
