@@ -39,6 +39,9 @@ class Settings(BaseSettings):
                     parts = url.split("://", 1)
                     parts[0] = "postgresql+asyncpg"
                     url = "://".join(parts)
+            # Replace sslmode= with ssl= for asyncpg compatibility
+            if "sslmode=" in url:
+                url = url.replace("sslmode=", "ssl=", 1)
             self.database_url = url
 
         # Convert postgres:// or postgresql:// to postgresql+psycopg2://
@@ -53,6 +56,9 @@ class Settings(BaseSettings):
                     parts = url.split("://", 1)
                     parts[0] = "postgresql+psycopg2"
                     url = "://".join(parts)
+            # Ensure sync connection has sslmode= (replace ssl= with sslmode= if user passed ssl=)
+            if "ssl=" in url and "sslmode=" not in url:
+                url = url.replace("ssl=", "sslmode=", 1)
             self.sync_database_url = url
             
         return self
