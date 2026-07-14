@@ -8,6 +8,10 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue.svg)](requirements.txt)
 [![Build Status](https://github.com/Hariom312003/AI_SQL_Analyst/actions/workflows/CI.yml/badge.svg)](https://github.com/Hariom312003/AI_SQL_Analyst/actions)
 
+🚀 **Live Deployed App:** [AI SQL Analyst on Streamlit Cloud](https://share.streamlit.io/hariom312003/ai_sql_analyst/main/app.py)
+
+---
+
 AI SQL Analyst is a state-of-the-art, multi-agent conversational data analytics platform. It translates plain English questions into verified, read-only SQL queries, executes them against PostgreSQL, explains the findings in executive summaries, and dynamically builds Plotly visualizations.
 
 ---
@@ -94,19 +98,21 @@ Open your browser and navigate to:
 
 ## 🚀 Deployment Guide
 
-### Database (Neon or Supabase)
-1. Provision a Postgres instance and copy the URI.
-2. Apply migrations: `DATABASE_URL="postgresql+asyncpg://..." alembic upgrade head`
+The easiest way to deploy this project is using the **Unified Streamlit Cloud Deployment**, which hosts both the frontend and backend together on the free tier of Streamlit Community Cloud:
 
-### Backend (Render or Railway)
-- Create a Web Service pointed to this repository.
-- Bind the start command to: `uvicorn backend.api.main:app --host 0.0.0.0 --port 8000`
-- Define `DATABASE_URL` and `GEMINI_API_KEY` in environment config variables.
+1. Create a free PostgreSQL database instance on [Neon](https://neon.tech) or [Supabase](https://supabase.com) and copy the connection URI.
+2. Log in to [Streamlit Community Cloud](https://streamlit.io/cloud) and deploy this repository.
+3. Set the main entrypoint file to `app.py`.
+4. In Streamlit's **Secrets Manager**, configure the following variables:
+   ```toml
+   DATABASE_URL = "postgresql+asyncpg://user:pass@host:5432/dbname"
+   SYNC_DATABASE_URL = "postgresql+psycopg2://user:pass@host:5432/dbname"
+   GEMINI_API_KEY = "your_actual_gemini_api_key"
+   LLM_PROVIDER = "gemini"
+   ```
+5. Click **Deploy**. The application will automatically execute database migrations and spin up the backend on boot.
 
-### Frontend (Streamlit Community Cloud)
-- Deploy your repo and set `app.py` as the entrypoint.
-- Define `API_BASE_URL` in secrets pointing to the backend's Render service URL.
-- See the full [Deployment Guide](docs/Deployment.md) for step-by-step instructions.
+For the multi-service deployment setup (Render/Railway/Docker), see the full [Deployment Guide](docs/Deployment.md).
 
 ---
 

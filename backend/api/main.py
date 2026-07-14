@@ -30,6 +30,18 @@ configure_logging("DEBUG" if settings.debug else "INFO")
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Starting {} (env={})", settings.app_name, settings.environment)
+    
+    # Run Alembic migrations on startup
+    try:
+        from alembic.config import Config
+        from alembic import command
+        logger.info("Running database migrations via Alembic...")
+        alembic_cfg = Config("alembic.ini")
+        command.upgrade(alembic_cfg, "head")
+        logger.info("Database migrations completed successfully.")
+    except Exception as e:
+        logger.warning(f"Alembic auto-migration failed or skipped: {e}")
+
     try:
         rebuild_schema_index()
     except Exception:

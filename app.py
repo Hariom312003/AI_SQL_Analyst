@@ -19,6 +19,68 @@ import streamlit as st
 
 API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000/api/v1")
 
+def start_backend_if_needed():
+    """Auto-starts the FastAPI backend if API_BASE is localhost and port is not bound."""
+    if "localhost" in API_BASE or "127.0.0.1" in API_BASE:
+        import socket
+        import subprocess
+        
+        # Determine port from API_BASE
+        port = 8000
+        try:
+            from urllib.parse import urlparse
+            parsed = urlparse(API_BASE)
+            if parsed.port:
+                port = parsed.port
+        except Exception:
+            pass
+        
+        # Check if port is open
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(0.5)
+        try:
+            s.connect(("127.0.0.1", port))
+            s.close()
+            # Already running
+            return
+        except OSError:
+            pass
+
+        print(f"FastAPI backend not detected on port {port}. Auto-starting FastAPI backend in background...", file=sys.stderr)
+        try:
+            # Start backend as background process (stdout/stderr silenced to avoid polluting console)
+            subprocess.Popen(
+                [sys.executable, "-m", "uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", str(port)],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            
+            # Wait for backend to become healthy
+            health_url = f"{API_BASE}/health"
+            start_time = time.time()
+            timeout = 30.0  # Allow up to 30 seconds for startup and migrations
+            backend_ready = False
+            
+            while time.time() - start_time < timeout:
+                try:
+                    r = requests.get(health_url, timeout=1.0)
+                    if r.status_code == 200:
+                        backend_ready = True
+                        break
+                except requests.RequestException:
+                    pass
+                time.sleep(0.5)
+                
+            if backend_ready:
+                print("FastAPI backend started and is healthy.", file=sys.stderr)
+            else:
+                print("FastAPI backend failed to start or become healthy within timeout.", file=sys.stderr)
+                
+        except Exception as e:
+            print(f"Failed to auto-start FastAPI backend: {e}", file=sys.stderr)
+
+start_backend_if_needed()
+
 # Set Page Config
 st.set_page_config(
     page_title="AI SQL Analyst - Enterprise Analytics",
