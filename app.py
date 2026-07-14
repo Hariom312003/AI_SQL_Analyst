@@ -46,13 +46,11 @@ def start_backend_if_needed():
         except OSError:
             pass
 
-        print(f"FastAPI backend not detected on port {port}. Auto-starting FastAPI backend in background...", file=sys.stderr)
+        print(f"FastAPI backend not detected on port {port}. Auto-starting FastAPI backend in background...", file=sys.stderr, flush=True)
         try:
-            # Start backend as background process (stdout/stderr silenced to avoid polluting console)
+            # Start backend as background process (let stdout/stderr flow to console for visibility)
             subprocess.Popen(
                 [sys.executable, "-m", "uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", str(port)],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
             )
             
             # Wait for backend to become healthy
@@ -72,12 +70,12 @@ def start_backend_if_needed():
                 time.sleep(0.5)
                 
             if backend_ready:
-                print("FastAPI backend started and is healthy.", file=sys.stderr)
+                print("FastAPI backend started and is healthy.", file=sys.stderr, flush=True)
             else:
-                print("FastAPI backend failed to start or become healthy within timeout.", file=sys.stderr)
+                print("FastAPI backend failed to start or become healthy within timeout.", file=sys.stderr, flush=True)
                 
         except Exception as e:
-            print(f"Failed to auto-start FastAPI backend: {e}", file=sys.stderr)
+            print(f"Failed to auto-start FastAPI backend: {e}", file=sys.stderr, flush=True)
 
 start_backend_if_needed()
 

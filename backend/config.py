@@ -8,6 +8,7 @@ from __future__ import annotations
 from functools import lru_cache
 from typing import Literal
 
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -23,6 +24,38 @@ class Settings(BaseSettings):
     # Database
     database_url: str = "postgresql+asyncpg://sql_analyst:sql_analyst@localhost:5432/sql_analyst"
     sync_database_url: str = "postgresql+psycopg2://sql_analyst:sql_analyst@localhost:5432/sql_analyst"
+
+    @model_validator(mode="after")
+    def validate_database_urls(self) -> Settings:
+        # Convert postgres:// or postgresql:// to postgresql+asyncpg://
+        if self.database_url:
+            url = self.database_url
+            if url.startswith("postgres://"):
+                url = url.replace("postgres://", "postgresql+asyncpg://", 1)
+            elif url.startswith("postgresql://"):
+                url = url.replace("postgresql://", "postgresql+asyncpg://", 1)
+            elif "postgresql+asyncpg" not in url:
+                if "postgresql+" in url:
+                    parts = url.split("://", 1)
+                    parts[0] = "postgresql+asyncpg"
+                    url = "://".join(parts)
+            self.database_url = url
+
+        # Convert postgres:// or postgresql:// to postgresql+psycopg2://
+        if self.sync_database_url:
+            url = self.sync_database_url
+            if url.startswith("postgres://"):
+                url = url.replace("postgres://", "postgresql+psycopg2://", 1)
+            elif url.startswith("postgresql://"):
+                url = url.replace("postgresql://", "postgresql+psycopg2://", 1)
+            elif "postgresql+psycopg2" not in url:
+                if "postgresql+" in url:
+                    parts = url.split("://", 1)
+                    parts[0] = "postgresql+psycopg2"
+                    url = "://".join(parts)
+            self.sync_database_url = url
+            
+        return self
 
     # LLM
     llm_provider: Literal["gemini", "anthropic", "fake"] = "fake"
